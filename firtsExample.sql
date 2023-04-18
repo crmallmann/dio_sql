@@ -21,12 +21,11 @@ CREATE TABLE `periodicos` (
 );
 
 
-
 ALTER TABLE periodicos ADD CONSTRAINT fk_editora_periodicos FOREIGN KEY (id_editora) REFERENCES editora (id);
 
 INSERT INTO editora (nome_editora, pais) VALUES ('IEE', 'EUA'), ('DataScienceMagazine', 'EUA');
 
-INSERT INTO periodicos (nome, issn, id_editora) VALUES ('Special Issue', 'issn1',1);
+INSERT INTO periodicos (nome_periodico, issn, id_editora) VALUES ('Special Issue', '001',1);
 
 
 
